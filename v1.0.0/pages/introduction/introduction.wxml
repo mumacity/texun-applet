@@ -1,0 +1,10 @@
+<!--miniprogram/pages/introduction/introduction.wxml-->
+<view>
+  <view class='header'>主要经营范围</view>
+  <view class='content'>
+    <block wx:for="{{postList[1].introduction}}">
+        <image bindtap="onCaseTap" data-list="{{item.imgSrc}}" data-src="{{item.bigImg}}" src="{{item.imgSrc}}"></image>
+    </block>
+  </view>
+  <view class='footer'>特讯科技</view>
+</view>

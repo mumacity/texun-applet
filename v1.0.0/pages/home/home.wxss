@@ -1,0 +1,77 @@
+/* miniprogram/pages/home.wxss */
+swiper{
+  width: 100%;
+  height: 234rpx;
+}
+swiper image{
+  width: 100%;
+  height:234rpx;
+}
+.wrapper{
+  background-color: #fdf9fe;
+  width: 100%;
+  height: 100%;
+  margin-top: 40rpx;
+  overflow: auto;
+}
+.caseTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.underline{
+  width: 150rpx;
+  border-bottom: 3px solid #de86f7;
+  margin-top: 15rpx;
+}
+.caseContent{
+  display: flex;
+  flex-wrap: wrap;
+}
+.caseContent  view{
+  flex: 1;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30rpx;
+}
+.caseContent image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10px;
+}
+.caseContent text{
+  font-size: 28rpx;
+  margin-top: 15rpx;
+}
+.businessTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.businessTitle .partner{
+  font-size: 24rpx;
+  margin-top: 15rpx;
+}
+.businessContent{
+  width: 700rpx;
+  margin:0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+.businessContent image{
+  width: 170rpx;
+  height: 100rpx;
+  margin-left: 20rpx; 
+}
+.copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80rpx;
+  font-size: 24rpx;
+  margin-bottom: 30rpx;
+}

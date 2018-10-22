@@ -1,0 +1,14 @@
+<view class='container'>
+    <image src='{{postList.aboutImg}}'></image>
+    <view class='introduction'>公司介绍</view>
+    <view class='introText'>
+      <block wx:for="{{postList.aboutText}}">
+        <text>{{item}}</text>
+      </block>
+    </view>
+       <view class='tel'>公司电话</view>
+       <text class='font'>0451-86711678</text>
+       <view class='address'>公司地址</view>
+       <text class='font'>黑龙江省哈尔滨市道外区长江路1608号B馆4楼</text>
+       <map id="map" longitude="126.854570000" latitude="45.7517800000" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 500rpx;"></map>
+</view>

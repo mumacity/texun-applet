@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/introduction/introduction",
+    "pages/dynamic/dynamic",
+    "pages/dynamic/dynamicDetail/dynamicDetail",
+    "pages/contact/contact"
+  ],
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/images/home.png",
+        "color": "#000000",
+        "selectedIconPath": "static/images/homes.png"
+      },
+      {
+        "pagePath": "pages/introduction/introduction",
+        "text": "经营范围",
+        "iconPath": "static/images/introduction.png",
+        "selectedIconPath": "static/images/introductions.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "工建通",
+        "iconPath": "static/images/dynamic.png",
+        "selectedIconPath": "static/images/dynamics.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "static/images/contact.png",
+        "selectedIconPath": "static/images/contacts.png"
+      }
+    ]
+  }
+}

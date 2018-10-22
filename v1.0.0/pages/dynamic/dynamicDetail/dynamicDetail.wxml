@@ -1,0 +1,16 @@
+<view class='container'>
+  <text class='detailTitle'>{{postData.dynamicTitle}}</text>
+  <view class='post'>
+    <text class='postTime'>时间：{{ postData.postTime}}</text>
+  </view>
+  <view class='detailImg'>
+    <block  wx:for='{{postData.detailSrc}}'>
+       <image src='{{item}}'></image>
+    </block>
+  </view>
+  <view class='detailText'>
+    <block  wx:for='{{postData.text}}'>
+       <text>{{item}}</text>  
+    </block>
+  </view>
+</view>

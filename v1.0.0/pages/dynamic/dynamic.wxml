@@ -1,0 +1,10 @@
+<view>
+  <view wx:for="{{postList[2].dynamic}}"  class="wrapper">
+    <text class='dynamicTitle'>{{item.dynamicTitle}}</text>
+    <image src='{{item.postImgSrc}}'  data-postid="{{item.postid}}" bindtap='onPostTap'></image>
+    <view class='post'>
+      <text class='postFont'>发布时间：</text>    
+      <text class='postTime'>{{item.postTime}}</text>    
+    </view> 
+  </view>
+</view>

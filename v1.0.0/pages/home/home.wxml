@@ -1,0 +1,41 @@
+<!--miniprogram/pages/home.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{postList[0].imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='wrapper'>
+   <view class='case'>
+    <view class='caseTitle'>
+      <text class='caseFont'>案例展示</text>
+      <view class='underline'></view>
+    </view>
+    <view class='caseContent'>
+      <view wx:for="{{postList[0].caseInfo}}">
+        <image bindtap="onCaseTap" data-list="{{item.imgSrc}}" data-src="{{item.bigImg}}" src="{{item.imgSrc}}"></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+   </view>
+  <view class='business'>
+    <view class='businessTitle'>
+      <text class='caseFont'>合作伙伴</text>
+      <view class='underline'></view>
+      <text class='partner'>business partner</text>  
+    </view>
+    <view class='businessContent'>
+          <view wx:for='{{postList[0].partner}}'>
+            <image src='{{item}}'></image>
+          </view>
+    </view>
+  </view>
+  <view class='copyright'>
+  <text>特讯科技</text>
+  <text>www.texunkeji.net</text>
+  </view>
+  </view>
+</view>
